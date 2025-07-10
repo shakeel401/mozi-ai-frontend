@@ -7,7 +7,7 @@ async function sendMessage() {
   input.value = "";
 
   try {
-    const res = await fetch("https://huggingface.co/spaces/Shakeel676/mozi-ai-backend/chat", {
+    const res = await fetch("https://Shakeel676-mozi-ai-backend.hf.space/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
