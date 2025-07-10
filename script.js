@@ -1,6 +1,7 @@
+const input = document.getElementById("user-input");
+const spinner = document.getElementById("spinner");
+
 async function sendMessage() {
-  const input = document.getElementById("user-input");
-  const spinner = document.getElementById("spinner");
   const message = input.value.trim();
   if (!message) return;
 
@@ -33,7 +34,9 @@ function appendMessage(role, text) {
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-// Send on Enter
-document.getElementById("user-input").addEventListener("keypress", function (e) {
-  if (e.key === "Enter") sendMessage();
+// ⏎ Submit on Enter key
+input.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    sendMessage();
+  }
 });
