@@ -10,15 +10,17 @@
   <div class="chat-container">
     <header class="chat-header">
       <h1>Hormozi AI</h1>
-      <p>Ask Alex Hormozi anything — powered by real content.</p>
+      <p>Ask Alex Hormozi anything — based on real content</p>
     </header>
 
     <div id="chat-box" class="chat-box">
       <!-- Messages will appear here -->
     </div>
 
+    <div id="spinner" class="spinner hidden"></div>
+
     <div class="chat-input">
-      <input type="text" id="user-input" placeholder="Ask something..." autocomplete="off" />
+      <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off" />
       <button onclick="sendMessage()">➤</button>
     </div>
 
